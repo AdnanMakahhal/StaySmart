@@ -1,6 +1,14 @@
 # StaySmart
 
-StaySmart is a PHP and MySQL hotel-room booking website.
+Discover a comfortable stay with StaySmart, a hotel-room booking platform built with PHP and MySQL. Browse rooms, manage reservations, and share reviews after checkout—all backed by guest accounts and an admin dashboard.
+
+## Features
+
+- Browse and filter rooms, check availability, and book a stay.
+- Manage reservations, payments, profile details, and booking history.
+- Rate rooms and share reviews after completed stays.
+- Manage rooms, bookings, guest accounts, and homepage content from the admin panel.
+- Responsive layouts for desktop and mobile.
 
 ## Local setup
 
