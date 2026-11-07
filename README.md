@@ -2,6 +2,10 @@
 
 Discover a comfortable stay with StaySmart, a hotel-room booking platform built with PHP and MySQL. Browse rooms, manage reservations, and share reviews after checkout—all backed by guest accounts and an admin dashboard.
 
+## Live deployment
+
+Visit [StaySmart](https://staysmart.wasmer.app/).
+
 ## Features
 
 - Browse and filter rooms, check availability, and book a stay.
