@@ -1,0 +1,220 @@
+.bookingformcontainer {
+  position: relative;
+  margin-top: 5rem;
+  height: 100%;
+}
+
+.bookingformcontainer .bookingform .booking-header h1 {
+  margin: 90px 0 80px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.bookingformcontainer .bookingform .booking-header2 h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 90px 0 25px 0;
+}
+
+.bookingformcontainer .bookingform .flexbox-container {
+  display: grid;
+  grid-template-columns: auto;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+  justify-content: center;
+  margin: auto;
+  background-color: #ffffff77;
+  border-radius: 20px;
+  box-shadow: rgba(26, 26, 26, 0.65) 0px 1px 4px;
+}
+
+.booking-step,
+.booking-step2,
+.booking-step3 {
+  margin: 12px;
+}
+
+.booking-step2,
+.booking-step3 {
+  display: none;
+}
+
+.bookingformcontainer .bookingform .flexbox-container .div-image-book img {
+  width: 400px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.bookingformcontainer .bookingform .flexbox-container .form-book input {
+  padding: 10px 20px;
+  margin: 5px 0;
+}
+
+.bookingformcontainer .bookingform .flexbox-container .form-book button {
+  background-color: salmon;
+  padding: 10px 100px;
+  border-radius: 10px;
+  margin: 10px 0 0 19%;
+  border: 0px solid;
+}
+
+.bookingformcontainer .bookingform .flexbox-container .form-book button:hover {
+  background-color: rgba(250, 128, 114, 0.856);
+}
+
+.bookingform .container {
+  padding: 10px;
+  display: flex;
+  margin-bottom: 5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+.progress-container::before {
+  content: "";
+  background-color: salmon;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress {
+  background-color: salmon;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid salmon;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: #2a90d9;
+  background-color: #ee685f;
+  color: #fff;
+}
+
+.btn {
+  background-color: #ee685f;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: #ee685f;
+  cursor: not-allowed;
+}
+
+.div-room-icon {
+  display: flex;
+  padding: 5px 0 0 0;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.form-group span {
+  color: #2a90d9;
+  font-weight: 700;
+}
+
+.contact-form-container {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px 0 0 0;
+}
+
+.cf {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cf input {
+  padding: 4px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.email-phone {
+  display: flex;
+  gap: 5%;
+}
+
+.cform-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cform-button span {
+  font-size: 14px;
+  color: #222;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.not-login-error {
+  text-align: center;
+  margin: 220px auto;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 20%;
+  padding: 20px 10px;
+  border-radius: 10px;
+}

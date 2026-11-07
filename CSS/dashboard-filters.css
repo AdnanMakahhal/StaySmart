@@ -1,0 +1,40 @@
+.admin-dashboard-page .dashboard-report-filter { display: flex; flex-direction: column; align-items: stretch; gap: 22px; padding: 25px; border: 1px solid #e0e6ed; border-radius: 14px; background: #fff; box-shadow: 0 5px 18px #27364b04; scroll-margin-top: 145px; }
+.dashboard-report-filter .dashboard-filter-intro { margin: 0; gap: 13px; }
+.dashboard-report-filter .dashboard-filter-copy { display: flex; flex-direction: column; gap: 6px; }
+.dashboard-report-filter .dashboard-filter-copy strong { color: #28374b; font-size: 16px; }
+.dashboard-report-filter .dashboard-filter-copy small { color: #758295; font-size: 12px; line-height: 1.6; }
+.report-presets { display: flex; flex-wrap: wrap; gap: 8px; border: 0; padding: 0; margin: 0; min-width: 0; }
+.report-presets legend { margin-bottom: 12px; font-size: 12px; font-weight: 600; color: #4a596c; }
+.report-presets label { position: relative; cursor: pointer; margin: 0; }
+.report-presets input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.report-presets label > span { display: inline-flex; min-height: 39px; align-items: center; padding: 0 15px; border: 1px solid #dfe5ed; border-radius: 7px; background: #fff; color: #5d6b7f; font-size: 12px; transition: background .15s; }
+.report-presets input:checked + span { color: #ad4e44; border-color: #e9b8b0; background: #fff1ee; font-weight: 600; box-shadow: 0 0 0 1px #e9b8b0; }
+.report-presets input:focus-visible + span { outline: 3px solid #87b6e4; outline-offset: 3px; }
+.report-presets label:hover > span { border-color: #a6b5c5; }
+.report-date-row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px; padding: 18px; border: 1px solid #e4e9ef; border-radius: 9px; background: #f8fafc; }
+.report-date-row > div { flex: 1; min-width: 170px; }
+.report-date-row label { display: block; margin: 0 0 9px; color: #56667b; font-size: 11px; font-weight: 600; }
+.report-date-row input { box-sizing: border-box; width: 100%; min-height: 43px; padding: 9px 12px; border: 1px solid #d9e1eb; border-radius: 7px; background: #fff; color: #33445a; font: inherit; font-size: 13px; }
+.report-date-arrow { padding-bottom: 11px; color: #92a0b2; }
+.report-date-row > p { flex-basis: 100%; margin: 0; color: #748297; font-size: 11px; }
+.report-filter-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 18px; align-items: center; border-top: 1px solid #edf0f4; padding-top: 18px; }
+.dashboard-report-filter .dashboard-filter-period { display: flex; align-items: center; gap: 9px; margin: 0; padding: 0; border: 0; border-radius: 0; background: none; color: #748093; font-size: 12px; }
+.dashboard-report-filter .dashboard-filter-period strong { color: #384b63; font-weight: 600; }
+.report-filter-actions { display: flex; align-items: center; gap: 22px; margin-left: auto; }
+.report-filter-actions a { color: #6a788d; font-size: 12px; text-underline-offset: 4px; }
+.dashboard-report-filter .dashboard-filter-submit { display: inline-flex; min-height: 43px; align-items: center; justify-content: center; gap: 9px; padding: 0 20px; border: 1px solid #ed7164; border-radius: 7px; background: #ed7164; color: #fff; font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; }
+.dashboard-report-filter .dashboard-filter-submit:hover { background: #d75e52; }
+.dashboard-report-filter :is(input, a, button):focus-visible { outline: 3px solid #87b6e4; outline-offset: 3px; }
+.report-range-error { margin: 0; padding: 12px 16px; background: #fff1ee; color: #b44338; border-radius: 7px; font-size: 12px; line-height: 1.6; }
+.dashboard-report-filter [hidden] { display: none !important; }
+@media (max-width: 600px) {
+  .admin-dashboard-page .dashboard-report-filter { padding: 20px 16px; gap: 20px; }
+  .report-presets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .report-presets label > span { width: 100%; justify-content: center; padding-inline: 8px; }
+  .report-date-row { padding: 14px; gap: 16px; }
+  .report-date-row > div { min-width: 100%; }
+  .report-date-row input { font-size: 16px; }
+  .report-date-arrow { display: none; }
+  .report-filter-footer { align-items: stretch; flex-direction: column; }
+  .report-filter-actions { margin: 0; justify-content: space-between; }
+}

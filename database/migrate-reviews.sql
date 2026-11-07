@@ -1,0 +1,2 @@
+USE staysmart;
+ALTER TABLE room_reviews ADD COLUMN IF NOT EXISTS review_text VARCHAR(1000) NOT NULL DEFAULT '';

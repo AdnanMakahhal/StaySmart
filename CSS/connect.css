@@ -1,0 +1,77 @@
+.container {
+}
+
+.section-container {
+  position: relative;
+  margin-top: 10rem;
+  height: 100%;
+}
+
+.div-contact-form-image {
+  position: relative;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.div-contact-form-image img {
+  border-radius: 20px;
+  width: 80%;
+  height: 35vh;
+}
+
+.div-contact-form-text {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 29%;
+  width: 40%;
+}
+
+.div-contact-form-text h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.div-contact-form-text p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.section-container {
+}
+
+form .label,
+form input {
+  margin: 0 15%;
+}
+
+.input-box textarea {
+  margin: 0 15%;
+  width: 70%;
+  height: 50px;
+}
+
+.input-box input {
+  width: 70%;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid;
+  outline: none;
+  font-size: 1em;
+  color: black;
+  padding: 0 10px 0 10px;
+}
+
+form button {
+  padding: 15px 206.5px;
+  border-radius: 0.5rem;
+  background-color: #ee685f;
+  color: #ffffff;
+  margin: 30px 0;
+  border: none;
+  cursor: pointer;
+  margin: 20px 39%;
+}

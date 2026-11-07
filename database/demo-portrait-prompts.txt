@@ -1,0 +1,10 @@
+Built-in image_gen mode. Final prompt set for the three fictional demo portraits.
+
+MAYA
+Use case: photorealistic-natural. Asset type: square profile avatar for a clearly labeled fictional hotel demo account. Fictional adult woman around 30, shoulder-length dark brown hair, medium warm complexion, friendly natural smile, simple cream blouse, muted olive garden background. Single person, centered head and shoulders, entire head visible with generous space for circular cropping, candid realistic portrait photography, soft daylight, subtle natural skin texture, no glamour retouching. No text, logos, watermarks, collage or additional people. This is a fictional AI-created person, not a real guest.
+
+OMAR
+Use case: photorealistic-natural. Asset type: square profile avatar for a clearly labeled fictional hotel demo account. Fictional adult man around 35, short dark hair and neatly trimmed beard, warm medium complexion, relaxed natural smile, pale blue casual shirt, muted warm stone background. Single person, centered head and shoulders, entire head visible with generous space for circular cropping, candid realistic portrait photography, soft daylight, subtle natural skin texture, no glamour retouching. No text, logos, watermarks, collage or additional people. This is a fictional AI-created person, not a real guest.
+
+SOPHIA
+Use case: photorealistic-natural. Asset type: square profile avatar for a clearly labeled fictional hotel demo account. Fictional adult woman around 28, wavy chestnut hair, fair warm complexion, relaxed natural smile, soft terracotta blouse, muted beige courtyard background. Single person, centered head and shoulders, entire head visible with generous space for circular cropping, candid realistic portrait photography, soft daylight, subtle natural skin texture, no glamour retouching. No text, logos, watermarks, collage or additional people. This is a fictional AI-created person, not a real guest.

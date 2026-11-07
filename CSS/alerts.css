@@ -1,0 +1,20 @@
+.stay-toast { position: fixed; z-index: 9999; top: 92px; right: 24px; display: flex; align-items: flex-start; gap: 13px; width: min(440px, calc(100vw - 32px)); padding: 20px; border: 1px solid #dce8df; border-left: 4px solid #5b9371; border-radius: 12px; background: #fff; box-shadow: 0 14px 50px #1d34352b; color: #344054; animation: toast-enter .2s ease-out; box-sizing: border-box; }
+.stay-toast-icon { flex: 0 0 29px; display: grid; place-items: center; width: 29px; height: 29px; border-radius: 50%; background: #edf7ef; color: #43825c; font: 700 17px sans-serif; }
+.stay-toast > div { min-width: 0; flex: 1; }
+.stay-toast strong { display: block; margin: 2px 0 7px; font-size: 14px; }
+.stay-toast p { margin: 0; color: #718095; font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.stay-toast.is-error { border-color: #f0d9d0; border-left-color: #d1795f; }
+.stay-toast.is-error .stay-toast-icon { color: #bb634d; background: #fff0e9; }
+.stay-toast-dismiss { border: 0; padding: 0; background: transparent; color: #8a97a8; font-size: 22px; line-height: 1; cursor: pointer; }
+.stay-confirm { z-index: 9999; width: min(430px, calc(100vw - 32px)); max-width: none; box-sizing: border-box; margin: auto; padding: 30px; border: 1px solid #e1e6ed; border-radius: 16px; background: #fff; box-shadow: 0 20px 80px #182d4140; color: #344054; }
+.stay-confirm::backdrop { background: #1b293b88; backdrop-filter: blur(3px); }
+.stay-confirm-symbol { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: #fff0e8; color: #ca8060; font-size: 22px; margin-bottom: 22px; }
+.stay-confirm h2 { font-size: 21px; margin: 0 0 13px; font-weight: 600; }
+.stay-confirm p { font-size: 13px; line-height: 1.85; color: #788599; margin: 0 0 27px; }
+.stay-confirm-actions { display: flex; gap: 11px; justify-content: flex-end; }
+.stay-confirm-actions button { min-height: 42px; border: 1px solid #dce2eb; border-radius: 8px; background: #fff; color: #607187; padding: 10px 17px; font: inherit; font-size: 12px; cursor: pointer; }
+#stay-confirm-yes { background: #df7967; border-color: #df7967; color: #fff; }
+.stay-toast button:focus-visible, .stay-confirm button:focus-visible { outline: 3px solid #87b6dd; outline-offset: 3px; }
+@keyframes toast-enter { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 600px) { .stay-toast { top: 84px; right: 16px; padding: 17px; } .stay-confirm { padding: 24px; } }
+@media (prefers-reduced-motion: reduce) { .stay-toast { animation: none; } }

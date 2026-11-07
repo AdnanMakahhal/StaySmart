@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.my-header {
+  position: relative;
+  z-index: 20;
+  height: 72px;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 max(24px, calc((100% - 1170px) / 2));
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(38, 39, 41, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+
+.navbar.sticky {
+  box-shadow: 0 4px 16px rgba(38, 39, 41, 0.1);
+}
+
+.navbar .brand-title {
+  flex: 0 0 auto;
+  color: #2a90d9;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-smart {
+  color: #ee685f;
+}
+
+.div-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 2.5vw, 36px);
+  margin: 0 auto 0 clamp(30px, 5vw, 72px);
+  padding: 0;
+  list-style: none;
+}
+
+.div-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.div-links li a {
+  position: relative;
+  color: #262729;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.div-links li a::after {
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  left: 0;
+  height: 2px;
+  background: #ee685f;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.div-links li a:hover,
+.div-links li a:focus-visible,
+.div-links li a.is-active,
+.div-links li a[aria-current="page"] {
+  color: #ee685f;
+}
+
+.div-links li a:hover::after,
+.div-links li a:focus-visible::after,
+.div-links li a.is-active::after,
+.div-links li a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+.div-links li a.is-active,
+.div-links li a[aria-current="page"] {
+  font-weight: 700;
+}
+
+.nav-btns-container {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.div-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.div-user .nav-login,
+.div-user .nav-register {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #262729;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.div-user .nav-login:hover {
+  border-color: #e7e6eb;
+  background: #f7f7f7;
+}
+
+.div-user .nav-register {
+  border-color: #ee685f;
+  background: #ee685f;
+  color: #fff;
+}
+
+.div-user .nav-register:hover {
+  border-color: #dc5d55;
+  background: #dc5d55;
+}
+
+.nav-btns-container .admin-icon,
+.nav-btns-container .user-icon {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 14px;
+  border: 1px solid #f1d5d2;
+  border-radius: 24px;
+  background: #fff;
+  color: #ee685f;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-btns-container .user-icon {
+  gap: 8px;
+  padding: 6px 12px 6px 7px;
+}
+
+.header-user-avatar {
+  display: block;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #e4f2fb;
+  box-shadow: 0 0 0 1px #ee685f, 0 1px 4px rgba(38, 39, 41, 0.14);
+  object-fit: cover;
+}
+
+.nav-btns-container .user-icon .hide-name {
+  display: block;
+  max-width: clamp(64px, 13vw, 150px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav-btns-container .admin-icon:hover,
+.nav-btns-container .user-icon:hover {
+  border-color: #ee685f;
+  background: #fff7f6;
+}
+
+.nav-btns-container .admin-icon i,
+.nav-btns-container .user-icon > span:first-child {
+  font-size: 19px;
+}
+
+.icon.menu-btn {
+  display: none;
+}
+
+@media (max-width: 868px) {
+  .navbar {
+    padding: 0 22px;
+  }
+
+  .div-links {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 16px;
+    left: 16px;
+    display: none;
+    align-items: stretch;
+    gap: 0;
+    margin: 0;
+    padding: 8px;
+    border: 1px solid #e7e6eb;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(38, 39, 41, 0.14);
+  }
+
+  .navbar.show .div-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-links li a {
+    display: block;
+    padding: 13px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+
+  .div-links li a::after {
+    content: none;
+  }
+
+  .div-links li a:hover,
+  .div-links li a:focus-visible,
+  .div-links li a.is-active,
+  .div-links li a[aria-current="page"] {
+    background: #fff4f3;
+  }
+
+  .icon.menu-btn {
+    display: inline-grid;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    place-items: center;
+    order: 3;
+    padding: 0;
+    border: 1px solid #e7e6eb;
+    border-radius: 10px;
+    background: #fff;
+    color: #262729;
+    cursor: pointer;
+    font-size: 18px;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .icon.menu-btn:hover,
+  .icon.menu-btn:focus-visible {
+    border-color: #ee685f;
+    color: #ee685f;
+  }
+
+  .nav-btns-container {
+    margin-left: auto;
+    padding-right: 12px;
+  }
+
+  .nav-btns-container .admin-icon .hide-name {
+    display: none;
+  }
+
+  .nav-btns-container .user-icon .hide-name {
+    max-width: clamp(58px, 16vw, 120px);
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .navbar .brand-title {
+    font-size: 21px;
+  }
+
+  .div-user {
+    gap: 4px;
+  }
+
+  .div-user .nav-login,
+  .div-user .nav-register {
+    min-height: 36px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .nav-btns-container {
+    padding-right: 8px;
+  }
+
+  .nav-btns-container .user-icon {
+    min-height: 38px;
+    gap: 6px;
+    padding: 4px 8px 4px 5px;
+    font-size: 12px;
+  }
+
+  .header-user-avatar {
+    width: 25px;
+    height: 25px;
+    flex-basis: 25px;
+  }
+
+  .nav-btns-container .user-icon .hide-name {
+    max-width: clamp(48px, 19vw, 76px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
