@@ -2,6 +2,7 @@
 .env
 .env.*
 !.env.example
+PHP/db-config.php
 Assets/user-adnan.png
 Assets/profile-photos/user-1.jpg
 Assets/profile-photos/user-1.png

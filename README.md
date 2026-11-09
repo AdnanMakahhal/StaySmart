@@ -32,4 +32,13 @@ Visit [StaySmart](https://staysmart.wasmer.app/).
 
 For the Wasmer deployment, configure the `STAYSMART_DB_*` variables with the hostname, port, username, password, and database name of a reachable MySQL server. The deployment URL is not a database host.
 
+## InfinityFree setup
+
+1. Copy `PHP/db-config.example.php` to `PHP/db-config.php` and verify the database name against the MySQL Databases page in the InfinityFree control panel.
+2. Set the `password` value in `PHP/db-config.php` to your current MySQL password. Keep this file private; it is excluded from Git.
+3. Upload the project contents to `htdocs` for `staysmart.infinityfree.me`. Upload `PHP/db-config.php` separately through the hosting file manager or FTP; it is intentionally not tracked by Git.
+4. Import `database/staysmart.sql` into the hosting database using the InfinityFree database tools. Apply the other migration SQL files only if their changes are needed and are not already present.
+
+The app also accepts the `STAYSMART_DB_*` environment variables, which take precedence over `PHP/db-config.php`. Do not put database passwords in tracked files.
+
 Demo guest passwords are generated only when `database/seed-demo-guests.php` is first run. Save the command's output securely; later runs do not reveal or reset existing passwords.
